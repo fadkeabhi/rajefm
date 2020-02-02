@@ -1,0 +1,19 @@
+echo Installeing RAJEFM
+
+DIR="$(pwd)"
+
+if [ ! -d $HOME/.termux ]; then
+mkdir $HOME/.termux
+fi
+
+mv $DIR/rajefmdata $PREFIX/share
+
+mv $PREFIX/share/rajefmdata/rajefm $PREFIX/bin
+
+cd $PREFIX/bin
+
+chmod +x rajefm
+
+rm -rf $DIR
+
+echo Installation Successful Type rajefm To Use Raje File Manager
