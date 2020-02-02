@@ -38,7 +38,7 @@ echo Starting Server For RAJEFM
 echo You manager Address Will Be http://localhost:3271/
 echo -ne $C"   Press 'Enter' To Continue."
 read enter 
-myserver -s -php localhost 3271 $PREFIX/share/rajefmdata
+myserver -s -php localhost 3271 $PREFIX/../home/rajefmdata
 exit
 
 elif [ $opt = "Q" ] || [ $opt = "q" ];
@@ -66,7 +66,7 @@ then
 echo -ne $C  Press 'Enter' To Uninstall RAJEFM.
 read enter 
 rm -rf $PREFIX/bin/rajefm
-rm -rf $PREFIX/share/rajefmdata
+rm -rf $PREFIX/../home/rajefmdata
 echo Thanks For Using RAJEFM
 exit
 else
@@ -87,7 +87,7 @@ echo You manager Address Will Be http://localhost:$pt/
 echo -ne $C   Press 'Enter' To Continue.
 read enter 
 
-myserver -s -php localhost $pt $PREFIX/share/rajefmdata
+myserver -s -php localhost $pt $PREFIX/../home/rajefmdata
 
 exit
 
