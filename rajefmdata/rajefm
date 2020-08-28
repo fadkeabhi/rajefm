@@ -38,7 +38,7 @@ echo Starting Server For RAJEFM
 echo You manager Address Will Be http://localhost:3271/
 echo -ne $C"   Press 'Enter' To Continue."
 read enter 
-php -S localhost:3271 -t $HOME/share/rajefm
+php -S localhost:3271 -t $HOME/rajefm
 exit
 
 elif [ $opt = "Q" ] || [ $opt = "q" ];
