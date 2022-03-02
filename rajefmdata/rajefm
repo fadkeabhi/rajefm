@@ -35,10 +35,10 @@ read opt
 if [ $opt = "s" ] || [ $opt = "S" ];
 then
 echo Starting Server For RAJEFM
-echo You manager Address Will Be http://localhost:3271/
+echo You manager Address Will Be http://localhost:8080/
 echo -ne $C"   Press 'Enter' To Continue."
 read enter 
-php -S localhost:3271 -t $HOME/rajefmdata
+php -S localhost:8080 -t $HOME/rajefmdata
 exit
 
 elif [ $opt = "Q" ] || [ $opt = "q" ];
@@ -80,7 +80,7 @@ fi
 elif [ $opt = "M" ] || [ $opt = "m" ];
 then
 echo Enter Any Port
-echo Best Choice 3271 - 9890
+echo Best Choice 3217 - 9890
 read pt
 
 echo You manager Address Will Be http://localhost:$pt/
